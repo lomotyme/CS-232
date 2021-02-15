@@ -1,0 +1,34 @@
+Name: Robert Akinie
+CS 232
+Homework 1: Introduction to CalOS
+
+1. How many memory locations (units of RAM) does the virtual machine have by default?
+1024 words
+
+2. What are the registers that the virtual machine has?
+reg0, reg1, reg2 and pc
+
+3. What arguments does the instruction JLZ take and what does the instruction do?
+THe JLZ instruction takes takes in three arguments, a src register, a destination, and a CPU object. The instruction gives an Illegel signal alert when it does not have a src register argument. Else if the value in the src register is less than zero, change the destination from the pc register to another destination register. Else update the PC register value. 
+
+4. When does the CPU check if an interrupt has occurred?
+After every instruction.
+
+5. What does the Monitor instruction S do?
+It shows the memory from starting location to end location
+
+6. What does the Monitor instruction ! do?
+It toggles the debugging feature on or off. 
+
+7. Can assembly language files contain comments? How about blank lines?
+Yes they can, comments should shart with '#'. Yes, blank lines are skipped. 
+
+
+8. What function is called to write bytes into memory?
+_poke_ram
+
+
+9. Do assembly language programs assume they are loaded into memory at certain locations?
+Yes, they are given a starting address. 
+
+
